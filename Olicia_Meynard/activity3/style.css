@@ -1,0 +1,186 @@
+:root {
+    --main-color: rgb(109, 69, 52);
+    --secondary-color: rgb(65, 48, 40);
+    --darks: #100f15;
+    --darks2: #424246;
+    --transdark:rgba(16, 15, 21, 0.511);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: var(--darks2);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    max-width: 80rem;
+    background: var(--darks);
+    margin-top: 2rem;
+    display: flex;
+    border-bottom-right-radius: 2rem;
+    border-bottom: var(--main-color) 5px solid;
+    border-right: var(--main-color) 5px solid;
+    filter: drop-shadow(0 5px 5px #000000a2);
+}
+
+
+/**************
+HEADER
+*************/
+
+.header{
+    position: relative;
+    transform: scale(1.08);
+}
+
+.img-div{
+    width: 25rem;
+    filter: drop-shadow(0 10px 5px #000000a2);
+    position: relative;
+}
+
+.hero-img{
+    width: 100%;
+    
+}
+
+.name-text-div{
+    bottom: 4rem;
+    text-align: center;
+    background: var(--transdark);
+    padding: 1rem;
+    padding: 1.5rem;
+    border-bottom: var(--main-color) 2px solid;
+}
+
+
+.name-text{
+    font-size: 3rem;
+}
+
+.name-text, .position-text{
+    color: white;
+    text-transform: uppercase;
+}
+
+.position-text{
+    letter-spacing: 5px;
+    color: var(--main-color);
+}
+
+/*************
+SECTION BODY
+****************/
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: flex-end;
+}
+
+.email{
+    
+    writing-mode: vertical-rl;
+
+}
+.social-links .fa-brands{
+    color: var(--main-color);
+}
+
+.email{
+    color: white;
+}
+
+
+.section-body{
+    margin-left: 2rem;
+    padding: 2rem;
+
+}
+
+
+
+.tech-icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+.text-tech-skillls{
+    color: white;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.header-sec{
+    padding-top: 1rem;
+    color: var(--darks2);
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+}
+
+.workname{
+    color: white;
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+}
+
+.details{
+    color: gray;
+    line-height: 1.5;
+}
+
+
+/*************
+TABS
+**************/
+
+.experiencediv{
+    margin-top: 3rem;
+}
+
+.tabs{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2.3rem;
+    
+}
+
+.header-sec{
+    border-bottom: white solid 1px;
+    padding: 0.5rem 1rem;
+}
+
+.active-tab{
+    background: var(--main-color);
+    color: white;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content-active{
+    display: block;
+}
+
+.details p{
+    color: #424246;
+}

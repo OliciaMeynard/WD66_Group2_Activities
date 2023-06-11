@@ -9,11 +9,15 @@
 	  
 	    global $item1, $item2, $item3;
 	    
+        if($qty <= 0){
+            return "Invalid Quantity".'<br>';
+        }
+        
 	    switch($itm){
 	      case 1:
 	        $item1 -= $qty;
 	        if($item1 <= 0){
-	          return "No more Stocks for $itm".'<br>';
+	          return "No more Stocks for Item $itm".'<br>';
 	        }
 	        return "Item $itm- ($qty) qty | Remaining Stocks = $item1".'<br>';
 	        break;
@@ -37,19 +41,66 @@
 	        default:
 	        return "Invalid input: Item $itm".'<br>';
 	    }
+
+  
 	      
 	 
 	}
-	
-	
-	
-	echo computeStocksQty(1, 1 ); 
-	echo computeStocksQty(1, 20 ); 
-	echo computeStocksQty(1, 99 ); 
-	echo computeStocksQty(2, 40 ); 
-	echo computeStocksQty(2, 200 );
-	echo computeStocksQty(3, 180 );
-	echo computeStocksQty(7, 10 );
+	 
+	echo "Given Quantities on example".'<br>';
+    echo "\n";
+	echo computeStocksQty(1, 3 );
+    echo "\n";
+	echo computeStocksQty(1, 5 );
+    echo "\n";
+	echo computeStocksQty(2, 5 );
+    echo "\n";
+	echo computeStocksQty(1, 50 );
+    echo "\n";
+	echo computeStocksQty(3, 5 );
+    echo "\n";
+    echo "\n";
+    echo "\n";
 
+	
+
+    echo "Sample quantities from Invalid inputs to No stocks".'<br>'; 
+    echo "\n";
+	echo computeStocksQty(1, 0 );
+    echo "\n";
+	echo computeStocksQty(1, -1 );
+    echo "\n";
+	echo computeStocksQty(1, 1 ); 
+    echo "\n";
+	echo computeStocksQty(1, 20 ); 
+    echo "\n";
+	echo computeStocksQty(1, 99 ); 
+    echo "\n";
+	echo computeStocksQty(2, 40 ); 
+    echo "\n";
+	echo computeStocksQty(2, 200 );
+    echo "\n";
+	echo computeStocksQty(3, 180 );
+    echo "\n";
+	echo computeStocksQty(7, 10 );
+    
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ?>

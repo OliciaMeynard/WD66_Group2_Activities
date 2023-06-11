@@ -1,0 +1,55 @@
+<?php
+	
+	$item1 = 100;
+	$item2 = 200;
+	$item3 = 300;
+	
+	
+	function computeStocksQty ($itm, $qty) {
+	  
+	    global $item1, $item2, $item3;
+	    
+	    switch($itm){
+	      case 1:
+	        $item1 -= $qty;
+	        if($item1 <= 0){
+	          return "No more Stocks for $itm".'<br>';
+	        }
+	        return "Item $itm- ($qty) qty | Remaining Stocks = $item1".'<br>';
+	        break;
+	     case 2:
+	        $item2 -= $qty;
+	        if($item2 <= 0){
+	          return "No more Stocks for Item $itm".'<br>';
+	        }
+	        return "Item $itm- ($qty) qty  | Remaining Stocks = $item2".'<br>';
+	        break;
+
+        case 3:
+            $item3 -= $qty;
+            if($item3 <= 0){
+            return "No more Stocks for Item $itm".'<br>';
+            }
+            return "Item $itm - ($qty) qty  | Remaining Stocks = $item3".'<br>';
+            break;
+
+
+	        default:
+	        return "Invalid input: Item $itm".'<br>';
+	    }
+	      
+	 
+	}
+	
+	
+	
+	echo computeStocksQty(1, 1 ); 
+	echo computeStocksQty(1, 20 ); 
+	echo computeStocksQty(1, 99 ); 
+	echo computeStocksQty(2, 40 ); 
+	echo computeStocksQty(2, 200 );
+	echo computeStocksQty(3, 180 );
+	echo computeStocksQty(7, 10 );
+
+	
+?>

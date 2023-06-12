@@ -59,9 +59,33 @@ $items = [
     
     
     echo "If Not valid input or Invalid Item".'<br>';
+    echo "\n";
 	echo computeStocksQty('Item 4', 100 );
     echo "\n";
 
+
+
+
+
+    
+    
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 ?>

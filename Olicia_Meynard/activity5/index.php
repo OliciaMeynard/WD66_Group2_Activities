@@ -54,7 +54,6 @@
 	
 
     echo "Sample quantities from Invalid inputs to No stocks".'<br>'; 
-    echo "\n";
 	echo computeStocksQty(6, 5 );
     echo "\n";
 	echo computeStocksQty(1, 100 );
@@ -65,6 +64,25 @@
     echo "\n";
 	echo computeStocksQty(2, 195 );
 
+    
+    
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 ?>

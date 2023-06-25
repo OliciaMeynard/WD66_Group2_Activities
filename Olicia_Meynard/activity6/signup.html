@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="logInDiv">
+        <h4 class="form-header">Register Your Account</h4>
+        <form  action="backend/signup.php" class="signUpForm form-floating " id="logInForm" method="POST">
+        
+                <div class="mb-3">
+                    <label class="mb-2">Firstname</label>
+                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Enter Username" required>
+                </div>
+                <div class="mb-3">
+                    <label class="mb-2">Lastname</label>
+                    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Enter Username" required>
+                </div>
+                
+                <div class="inputNLabel mb-3">
+                    <label class="mb-2">Birthday</label>
+                    <input type="date" name="birthday" id="birthday" class="form-control" required>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" name="address" id="address" style="height: 80px" required></textarea>
+                    <label for="floatingTextarea2">Address</label>
+                </div>
+                <div class="mb-3">
+                    <label class="mb-2">City</label>
+                    <input type="text" name="city" class="form-control" id="city" placeholder="Enter City" required>
+                </div>
+
+                <div class="provZipDiv">
+
+                        <div class="provDiv">
+                            <label class="mb-2">Province</label>
+                            <select class="form-select" aria-label="Default select example" name="province" required>
+                                <option selected="true" style="display:none;">Select Your Province</option>
+                                <option value="manila">Manila</option>
+                                <option value="palawan">Palawan</option>
+                                <option value="Pangasinan">Pangasinan</option>
+                                <option value="launion">LaUnion</option>
+                              </select>
+                        </div>
+                        <div class="zipDiv" required>
+                            <label class="mb-2">Zip</label>
+                            <input type="text" name="zip" class="form-control" id="zip" placeholder="zip">
+                        </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="mb-2">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter City" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="mb-2">Password</label>
+                  <input type="password" name="password"  class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="mb-2">Confirm Password</label>
+                  <input type="password" name="passwordConfirm"  class="form-control" id="passwordConfirm" placeholder="Password" required>
+                </div>
+
+                <div class="form-check subscribe">
+                    <input class="form-check-input" name='subscribe' type="checkbox" value="subscribe" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Subscribe for the latest news
+                    </label>
+                  </div>
+                
+                <div class="divBtns btnsSignup mb-3">
+                    <input type="submit" class="btn btn-secondary logInBtn" id="logInBtn" value="Create Your Account"/>
+                    <a href="index.html" class="signUpLink">Back to Login</a>
+                </div>
+
+       
+
+        </form>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
